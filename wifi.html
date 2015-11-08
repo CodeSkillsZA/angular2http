@@ -1,0 +1,23 @@
+<h1>Fridays assignment</h1>
+
+<table width="100%">
+	<tr style="vertical-align:top">
+		<td style="width:20%">
+			<ul>
+			  <li *ng-for="#city of cities">
+			    <a href="#" (click)="selectCity($event, city)">{{city.Name}} </a>
+			  </li>
+			</ul>
+		</td>
+		<td style="width:80%">
+			<div *ng-for="#spot of spots">
+				
+				{{spot.Name}}
+				{{spot.Address}}
+				<hr />
+			</div>
+		</td>
+
+	</tr>
+</table>
+
